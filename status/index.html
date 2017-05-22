@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Arcadia Status - Are the Servers Down?</title>
+		
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400">
+		
+		<meta name="description" content="Minecraft (Login) Servers Status Checker. When you are getting 'Can't connect to minecraft.net' or 'Took too long to log in' errors, this is a great page to check if Minecraft's servers are acting up.">
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary">
+		<meta property="og:title" content="Minecraft Status">
+		<meta property="og:site_name" content="Minecraft Status">
+		<meta property="og:description" content="Minecraft (Login) Servers Status Checker. When you are getting 'Can't connect to minecraft.net' or 'Took too long to log in' errors, this is a great page to check if Minecraft's servers are acting up.">
+		<meta property="og:type" content="website">
+		
+		<!-- MOBILE -->
+		<meta name="application-name" content="Minecraft Status">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<h1 class="text-center">Current status of Minecraft services</h1>
+				
+				<div class="text-center">
+					<div id="login" class="span2">
+						<div class="service">
+							<div class="name">Login</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="session" class="span2">
+						<div class="service">
+							<div class="name">Session</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="website" class="span2">
+						<div class="service">
+							<div class="name">Website</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="skins" class="span2">
+						<div class="service">
+							<div class="name">Textures</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="realms" class="span2">
+						<div class="service">
+							<div class="name">Realms</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+				</div>
+				<h1 class="text-center">Current status of Arcadia Servers</h1>
+				<div class="text-center">
+					<div id="voltz" class="span2">
+						<div class="service">
+							<div class="name">Voltz</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+				<noscript>This will not work without JavaScript enabled</noscript>
+				
+				<div id="announcement" class="psa"></div>
+				
+				<div class="footer">
+					<hr class="dotted">
+					
+					<div class="pull-left muted">Last update: <span id="last-update">00:00:00 UTC</span>. Refreshing in <span id="time-to-update" class="light-blue">&infin;</span> seconds.</div>
+					
+					<div class="pull-right muted">
+						<span class="notifications"><a href="#">Enable notifications</a></span>
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="assets/mcstatus.js"></script>
+	</body>
+</html>
